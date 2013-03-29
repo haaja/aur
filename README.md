@@ -26,4 +26,5 @@ Building package
 5. Enable extension using `gnome-tweak-tool` or
 
     gsettings get org.gnome.shell enabled-extensions
+
     gsettings set org.gnome.shell enabled-extensions [<values from get above>, pomodoro@arun.codito.in]
