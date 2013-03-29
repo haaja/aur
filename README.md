@@ -17,7 +17,7 @@ Building package
 
 3. Install package
 
-    # pacman -U gnome-shell-extension-pomodoro-0.7-1-any.pkg.tar.xz
+    sudo pacman -U gnome-shell-extension-pomodoro-0.7-1-any.pkg.tar.xz
 
 4. Reload gnome-shell
 
