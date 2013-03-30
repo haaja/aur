@@ -9,10 +9,11 @@ license=('GPL3')
 depends=('gnome-shell')
 optdepends=('gnome-tweak-tool: A tool to customize advanced GNOME 3 options.')
 makedepends=('git')
-provides=('gnome-shell-extension-remove-accessibility-git')
+provides=('gnome-shell-extension-remove-accessibility-icon-git')
+conflicts=('gnome-shell-extension-remoce-accessibility-icon')
 groups=('gnome-shell-extensions')
 
-_name="gnome-shell-extension-remove-accessibility-icon"
+_name="gnome-shell-extension-remove-accessibility-icon-git"
 _gitroot="git://github.com/lomegor/Remove-Accessibility.git"
 _uuid="removeaccesibility@lomegor"
 
