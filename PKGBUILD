@@ -10,6 +10,7 @@ license=('GPL3')
 depends=('gnome-shell>=3.6')
 optdepends=('gnome-tweak-tool: A tool to customize advanced GNOME 3 options.')
 provides=('gnome-shell-extension-pomodoro')
+conflicts=('gnome-shell-extension-pomodoro-git')
 source=("https://github.com/codito/gnome-shell-pomodoro/zipball/${pkgver}")
 md5sums=('bcb8c761ed5cc3ecc5d733b472efd98b')
 install='gschemas.install'
