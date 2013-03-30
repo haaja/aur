@@ -13,6 +13,7 @@ provides=('gnome-shell-extension-pomodoro')
 conflicts=('gnome-shell-extension-pomodoro-git')
 source=("https://github.com/codito/gnome-shell-pomodoro/zipball/${pkgver}")
 md5sums=('bcb8c761ed5cc3ecc5d733b472efd98b')
+groups=('gnome-shell-extensions')
 install='gschemas.install'
 
 _name="codito-gnome-shell-pomodoro-6e520fa"
