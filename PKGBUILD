@@ -1,5 +1,7 @@
-# Maintainer: Arun <cute.tec@gmail.com>
-# Contributor: Janne Haapsaari <haaja@iki.fi>
+# Maintainer: Janne Haapsaari <haaja@iki.fi>
+# Contributor: Arun <cute.tec@gmail.com>
+# Contributor: Juanma Hernandez <juanmah@gmail.com>
+
 pkgname=gnome-shell-extension-pomodoro
 pkgver=0.7
 pkgrel=1
