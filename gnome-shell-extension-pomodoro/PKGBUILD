@@ -3,9 +3,8 @@
 # Contributor: Juanma Hernandez <juanmah@gmail.com>
 
 pkgname=gnome-shell-extension-pomodoro
-tmpver=0.8
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Pomodoro timer extension for gnome-shell"
 arch=('any')
 url="https://github.com/codito/gnome-shell-pomodoro"
@@ -14,21 +13,18 @@ depends=('gnome-shell>=3.10')
 optdepends=('gnome-tweak-tool: A tool to customize advanced GNOME 3 options.')
 provides=('gnome-shell-extension-pomodoro')
 conflicts=('gnome-shell-extension-pomodoro-git')
-source=("https://github.com/codito/gnome-shell-pomodoro/zipball/${tmpver}"
-        'icon-cache.patch'
-        '0001-Support-for-gnome-shell-3.10.patch')
-md5sums=('94f3560bbb855b3a1b8e859f95dfebc2'
-         'cab47246d6791e0faa42ea76a5270cd2'
-         'fdaae47ceab12be1d744c312a4a110ea')
+source=("https://github.com/codito/gnome-shell-pomodoro/zipball/${pkgver}"
+'icon-cache.patch')
+md5sums=('dc284bc38fde08a623cea9fc556b25ee'
+'cab47246d6791e0faa42ea76a5270cd2')
 groups=('gnome-shell-extensions')
 install='gschemas.install'
 
-_name="codito-gnome-shell-pomodoro-41534f2"
+_name="codito-gnome-shell-pomodoro-54cd878"
 
 build() {
     cd ${srcdir}/${_name}
     patch -p0 -i "${srcdir}/icon-cache.patch"
-    patch -p1 -i "${srcdir}/0001-Support-for-gnome-shell-3.10.patch"
     # for some reason while extracting autogen.sh loses execute rights
     chmod +x ${srcdir}/${_name}/autogen.sh
     ./autogen.sh --prefix=${pkgdir}/usr --disable-schemas-compile
