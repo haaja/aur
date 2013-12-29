@@ -1,33 +1,31 @@
 # Maintainer: Janne Haapsaari <haaja@iki.fi>
-# Contributors: Christopher Krooß <didi2002 at web.de>
-pkgname="gnome-shell-extension-dash-to-dock"
-pkgver="v25"
+# Contributor: Christopher Krooß <didi2002 at web.de>
+pkgname=gnome-shell-extension-dash-to-dock
+pkgver=v25
 pkgrel=1
-pkgdesc="Transform the dash into an intellihide dock"
+pkgdesc="A Gnome Shell extension that transforms the dash into an intellihide dock"
 arch=('any')
-url="https://github.com/micheleg/dash-to-dock/"
+url="https://github.com/micheleg/dash-to-dock"
 license=('GPL')
-makedepends=('git' 'gnome-common' 'intltool')
-conflicts=('gnome-shell-extensions-git')
-_gitroot="https://github.com/micheleg/dash-to-dock.git"
-_gitname="dash-to-dock"
+depends=('gnome-shell')
+makedepends=('gnome-common' 'intltool')
+provides=('gnome-shell-extension-dash-to-dock')
+conflicts=('gnome-shell-extensions-git' 'gnome-shell-extensions-dash-to-dock-git')
+changelog=
+source=(https://github.com/micheleg/dash-to-dock/archive/extensions.gnome.org-${pkgver}.tar.gz)
+md5sums=(1a513e3f7507bd1dc65464a92ca3d113) #autofill using updpkgsums
+
+_archivename=dash-to-dock-extensions.gnome.org-v25
 
 build() {
-	cd "$srcdir"
-	if [ -d $_gitname ] ; then
-            cd $_gitname && git pull origin
-	else
-            git clone $_gitroot
-	fi
-	cd "$srcdir/$_gitname"
-        git checkout extensions.gnome.org-${pkgver}
-	sed -i 's/INSTALLBASE = ~\/.local\/share\/gnome-shell\/extensions/INSTALLBASE = ${DESTDIR}/' Makefile 
-	make
+    cd "$srcdir/$_archivename"
+    sed -i 's/INSTALLBASE = ~\/.local\/share\/gnome-shell\/extensions/INSTALLBASE = ${DESTDIR}/' Makefile 
+    make
 }
 
 package() {
-	cd "$srcdir/$_gitname"
-	mkdir -p "${pkgdir}/usr/share/gnome-shell/extensions" "${pkgdir}/usr/share/glib-2.0/schemas/"
-	make DESTDIR=${pkgdir}/usr/share/gnome-shell/extensions install
-	install -m644 "schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml" "${pkgdir}/usr/share/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml"
+    cd "$srcdir/$_archivename"
+    mkdir -p "${pkgdir}/usr/share/gnome-shell/extensions" "${pkgdir}/usr/share/glib-2.0/schemas/"
+    make DESTDIR=${pkgdir}/usr/share/gnome-shell/extensions install
+    install -m644 "schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml" "${pkgdir}/usr/share/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml"
 }
