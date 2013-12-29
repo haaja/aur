@@ -19,8 +19,8 @@ build() {
 	else
             git clone $_gitroot
 	fi
-        git checkout extensions.gnome.org-${pkgver}
 	cd "$srcdir/$_gitname"
+        git checkout extensions.gnome.org-${pkgver}
 	sed -i 's/INSTALLBASE = ~\/.local\/share\/gnome-shell\/extensions/INSTALLBASE = ${DESTDIR}/' Makefile 
 	make
 }
