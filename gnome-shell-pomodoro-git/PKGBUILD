@@ -2,7 +2,7 @@
 # Contributor: Christopher Krooß <didi2002 at web.de>
 pkgname=gnome-shell-pomodoro-git
 pkgver=r426.c2a31b7
-pkgrel=1
+pkgrel=2
 pkgdesc="This GNOME utility intends to help manage time according to Pomodoro Technique."
 arch=('i686' 'x86_64')
 url="https://github.com/codito/gnome-shell-pomodoro/"
