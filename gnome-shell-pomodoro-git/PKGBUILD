@@ -1,5 +1,4 @@
 # Maintainer: Janne Haapsaari <haaja@iki.fi>
-# Contributor: Christopher Krooß <didi2002 at web.de>
 pkgname=gnome-shell-pomodoro-git
 pkgver=r426.c2a31b7
 pkgrel=2
