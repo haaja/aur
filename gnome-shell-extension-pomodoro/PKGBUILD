@@ -9,7 +9,8 @@ pkgdesc="Pomodoro timer extension for gnome-shell"
 arch=('any')
 url="https://github.com/codito/gnome-shell-pomodoro"
 license=('GPL3')
-depends=('gnome-shell>=3.10'
+depends=('dconf'
+	 'gnome-common'
          'hicolor-icon-theme')
 optdepends=('gnome-tweak-tool: A tool to customize advanced GNOME 3 options.')
 provides=('gnome-shell-extension-pomodoro')
