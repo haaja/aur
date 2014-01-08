@@ -4,7 +4,7 @@
 
 pkgname=gnome-shell-extension-pomodoro
 pkgver=0.8.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Pomodoro timer extension for gnome-shell"
 arch=('any')
 url="https://github.com/codito/gnome-shell-pomodoro"
