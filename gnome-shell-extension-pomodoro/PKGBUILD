@@ -10,8 +10,10 @@ arch=('any')
 url="https://github.com/codito/gnome-shell-pomodoro"
 license=('GPL3')
 depends=('dconf'
-	 'gnome-common'
          'hicolor-icon-theme')
+makedepends=('intltool'
+	     'gnome-common'
+	     'gtk-update-icon-cache')
 optdepends=('gnome-tweak-tool: A tool to customize advanced GNOME 3 options.')
 provides=('gnome-shell-extension-pomodoro')
 conflicts=('gnome-shell-extension-pomodoro-git')
