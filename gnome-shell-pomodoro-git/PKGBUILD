@@ -12,7 +12,8 @@ depends=('gnome-desktop'
          'gstreamer')
 makedepends=('git' 'intltool' 'vala')
 conflicts=('gnome-shell-extension-pomodoro'
-           'gnome-shell-extension-pomodoro-git')
+           'gnome-shell-extension-pomodoro-git'
+           'gnome-shell-pomodoro')
 provides=('gnome-shell-pomodoro-git')
 source=("$pkgname"::'git+https://github.com/codito/gnome-shell-pomodoro.git')
 md5sums=('SKIP')
