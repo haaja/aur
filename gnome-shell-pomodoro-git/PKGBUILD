@@ -14,7 +14,7 @@ makedepends=('git' 'intltool' 'vala')
 conflicts=('gnome-shell-extension-pomodoro'
            'gnome-shell-extension-pomodoro-git'
            'gnome-shell-pomodoro')
-provides=('gnome-shell-pomodoro-git')
+provides=('gnome-shell-pomodoro')
 source=("$pkgname"::'git+https://github.com/codito/gnome-shell-pomodoro.git')
 md5sums=('SKIP')
 install="gschemas.install"
