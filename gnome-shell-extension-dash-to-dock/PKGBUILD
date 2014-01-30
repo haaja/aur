@@ -10,8 +10,7 @@ license=('GPL')
 depends=('dconf')
 makedepends=('gnome-common' 'intltool')
 provides=('gnome-shell-extension-dash-to-dock')
-conflicts=('gnome-shell-extensions-git'
-           'gnome-shell-extensions-dash-to-dock-git')
+conflicts=('gnome-shell-extensions-dash-to-dock-git')
 changelog=
 source=("$pkgname::https://github.com/micheleg/dash-to-dock/archive/extensions.gnome.org-${pkgver}.tar.gz")
 md5sums=('1a513e3f7507bd1dc65464a92ca3d113')
