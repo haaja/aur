@@ -20,7 +20,7 @@ conflicts=('gnome-shell-extension-pomodoro-git')
 source=("https://github.com/codito/gnome-shell-pomodoro/zipball/${pkgver}"
         'icon-cache.patch')
 md5sums=('dc284bc38fde08a623cea9fc556b25ee'
-         'cab47246d6791e0faa42ea76a5270cd2')
+         'ed18b9f59def1d22b05345077840a3b0')
 groups=('gnome-shell-extensions')
 install='gschemas.install'
 
