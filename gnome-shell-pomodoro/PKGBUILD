@@ -1,7 +1,7 @@
 # Maintainer: Janne Haapsaari <haaja@iki.fi>
 pkgname=gnome-shell-pomodoro
 pkgver=0.10.2
-pkgrel=1
+pkgrel=2
 pkgdesc="This GNOME utility intends to help manage time according to Pomodoro Technique."
 arch=('i686' 'x86_64')
 url="https://github.com/codito/gnome-shell-pomodoro/"
