@@ -8,6 +8,7 @@ pkgdesc="A enchant provider plugin that allows using Voikko in any application t
 arch=('i686' 'x86_64')
 license=('LGPL')
 depends=('enchant' 'libvoikko')
+optdepends=('vimchant: spell check support for vim')
 source=(http://www.abisource.com/downloads/enchant/${pkgver}/enchant-${pkgver}.tar.gz)
 url="http://www.abisource.com/enchant/"
 
