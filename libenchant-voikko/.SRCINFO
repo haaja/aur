@@ -1,0 +1,16 @@
+pkgbase = libenchant-voikko
+	pkgdesc = A enchant provider plugin that allows using Voikko in any application that uses enchant
+	pkgver = 1.6.0
+	pkgrel = 1
+	url = http://www.abisource.com/enchant/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	depends = enchant
+	depends = libvoikko
+	optdepends = vimchant: spell check support for vim
+	source = http://www.abisource.com/downloads/enchant/1.6.0/enchant-1.6.0.tar.gz
+	md5sums = de11011aff801dc61042828041fb59c7
+
+pkgname = libenchant-voikko
+
