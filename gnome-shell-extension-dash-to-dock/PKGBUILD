@@ -12,7 +12,7 @@ makedepends=('gnome-common' 'intltool')
 provides=('gnome-shell-extension-dash-to-dock')
 conflicts=('gnome-shell-extensions-dash-to-dock-git')
 source=("$pkgname::https://github.com/micheleg/dash-to-dock/archive/extensions.gnome.org-${pkgver}.tar.gz")
-md5sums=('4c483e51b2bdf1687762aa03718a864d')
+sha256sums=('04a32135456cd53bd0e5d301955266f3144b815694e99510344620d1d5750c7a')
 install='gschemas.install'
 
 _archivename="dash-to-dock-extensions.gnome.org-${pkgver}"
