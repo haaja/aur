@@ -10,6 +10,7 @@ license=('LGPL')
 depends=('enchant' 'libvoikko')
 optdepends=('vimchant: spell check support for vim')
 source=(http://www.abisource.com/downloads/enchant/${pkgver}/enchant-${pkgver}.tar.gz)
+sha256sums=('2fac9e7be7e9424b2c5570d8affe568db39f7572c10ed48d4e13cddf03f7097f')
 url="http://www.abisource.com/enchant/"
 
 build() {
