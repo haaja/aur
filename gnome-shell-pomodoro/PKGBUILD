@@ -1,6 +1,6 @@
 # Maintainer: Janne Haapsaari <haaja@iki.fi>
 pkgname=gnome-shell-pomodoro
-pkgver=0.11.0
+pkgver=0.12.3
 pkgrel=1
 pkgdesc="This GNOME utility intends to help manage time according to Pomodoro Technique."
 arch=('i686' 'x86_64')
@@ -12,13 +12,13 @@ depends=('gnome-desktop'
          'gstreamer'
          'gom'
          'gobject-introspection')
-makedepends=('intltool' 'vala' 'gnome-common')
+makedepends=('intltool' 'vala' 'perl-xml-sax-expat' 'gnome-common')
 conflicts=('gnome-shell-extension-pomodoro'
            'gnome-shell-extension-pomodoro-git'
            'gnome-shell-pomodoro-git')
 provides=('gnome-shell-pomodoro')
 source=("$pkgname"::"https://codeload.github.com/codito/gnome-pomodoro/tar.gz/$pkgver")
-md5sums=('eeb4a097078fb0cd7b147fc5e6635cff')
+md5sums=('30de592c5049d9951f2be4fdf222e265')
 install="gschemas.install"
 
 _archive="gnome-pomodoro"
