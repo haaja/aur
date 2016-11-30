@@ -1,18 +1,17 @@
 pkgbase = gnome-shell-extension-dash-to-dock
 	pkgdesc = A gnome-shell extension that transforms the dash into an intellihide dock
-	pkgver = v47
+	pkgver = v55
 	pkgrel = 1
 	url = https://github.com/micheleg/dash-to-dock
 	install = gschemas.install
 	arch = any
 	license = GPL
-	makedepends = gnome-common
 	makedepends = intltool
 	depends = dconf
 	provides = gnome-shell-extension-dash-to-dock
 	conflicts = gnome-shell-extensions-dash-to-dock-git
-	source = gnome-shell-extension-dash-to-dock::https://github.com/micheleg/dash-to-dock/archive/extensions.gnome.org-v47.tar.gz
-	md5sums = 4c483e51b2bdf1687762aa03718a864d
+	source = gnome-shell-extension-dash-to-dock::https://github.com/micheleg/dash-to-dock/archive/extensions.gnome.org-v55.tar.gz
+	sha256sums = d147c7bc7a410406d87ce0d3c3daae13f4c7d5205754eeffd10be7f6c715a62a
 
 pkgname = gnome-shell-extension-dash-to-dock
 
