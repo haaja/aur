@@ -31,7 +31,7 @@ build() {
 package() {
     cd "$srcdir/$_archivename"
     mkdir -p "${pkgdir}/usr/share/gnome-shell/extensions" "${pkgdir}/usr/share/glib-2.0/schemas/"
-    make DESTDIR=${pkgdir}/usr/share/gnome-shell/extensions install
+    make install
     install -m644 "schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml" \
         "${pkgdir}/usr/share/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml"
 }
